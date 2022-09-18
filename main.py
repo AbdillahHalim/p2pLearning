@@ -1,4 +1,5 @@
 from math_function import add
+
 from eksponensial import eks
 
 def main():
@@ -9,6 +10,10 @@ def main():
 
     if operator == "+":
         result = add(data_1, data_2)
+    
+    
+    
+    
     if operator == "**":
         result = eks(data_1, data_2)
 
