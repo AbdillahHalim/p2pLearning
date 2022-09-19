@@ -1,4 +1,5 @@
 from math_function import add
+from modulo import mod
 
 from eksponensial import eks
 
@@ -10,22 +11,13 @@ def main():
 
     if operator == "+":
         result = add(data_1, data_2)
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-    
+        
     if operator == "**":
         result = eks(data_1, data_2)
+
+    if operator == "%":
+        result = mod(data_1, data_2)
+
 
     print("{} {} {} = {} ".format(data_1, operator, data_2, result))
 
