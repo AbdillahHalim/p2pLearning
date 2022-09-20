@@ -1,5 +1,6 @@
 from math_function import add
 from modulo import mod
+from root import root
 
 
 def main():
@@ -7,11 +8,13 @@ def main():
     data_1 = int(input("masukkan input 1 :"))
     data_2 = int(input("masukkan input 2 :"))
     operator = input("masukkan operator :")
-
+    
     if operator == "+":
         result = add(data_1, data_2)
-    if operator == "%":
+    elif operator == "%":
         result = mod(data_1, data_2)
+    elif operator == "v":
+        result = root(data_1, data_2)
 
     print("{} {} {} = {} ".format(data_1, operator, data_2, result))
 
